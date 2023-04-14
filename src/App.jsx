@@ -1,10 +1,11 @@
-import "./App.css";
-import DefauldPage from "./componentes/DefauldPage/DefauldPage";
+import Cabesera from "./componentes/Cabesera/Cabesera";
+import Header from "./componentes/Header/Header";
 
 function App() {
   return (
     <div className="App">
-      <DefauldPage />
+      <Header />
+      <Cabesera />
     </div>
   );
 }

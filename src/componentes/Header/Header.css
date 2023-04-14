@@ -1,0 +1,30 @@
+#Header {
+  width: 100%;
+  height: auto;
+  background-color: #000000;
+  align-items: center;
+  justify-content: center;
+}
+
+#menu {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1em 2em;
+}
+
+#menu h1 {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#menu .btn-NuevoVideo {
+  color: #fff;
+  display: flex;
+  background: none;
+  border: 1px solid #fff;
+  padding: 10px;
+}

@@ -4,24 +4,9 @@ function Header() {
   return (
     <section id="Header">
       <nav id="menu">
-        <ul>
-          <li>
-            <a href="#">Incio</a>
-          </li>
-          <li>
-            <a href="#"></a>
-          </li>
-          <li>
-            <a href="#"></a>
-          </li>
-          <li>
-            <a href="#"></a>
-          </li>
-          <li>
-            <a href="#"></a>
-          </li>
-        </ul>
-      </nav>
+        <h1>Anime luis angel ponce</h1>
+        <button className="btn-NuevoVideo">Nuevo Video</button>
+      </nav> 
     </section>
   );
 }

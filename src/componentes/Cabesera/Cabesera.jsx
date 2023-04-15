@@ -1,5 +1,4 @@
 import "./Cabesera.css";
-import pecadosMiniatura from "../../../public/img/7pecadosCapitalesPoster.png";
 
 function Cabesera() {
   return (
@@ -13,8 +12,8 @@ function Cabesera() {
           Maxime, alias?
         </p>
       </div>
-      <div className="img">
-        <img src={pecadosMiniatura} alt="7PecadosCapitales" />
+      <div className="miniatura">
+        
       </div>
     </section>
   );

@@ -1,20 +1,26 @@
 #baner {
   display: flex;
   width: 100%;
-  background-image: url(/public/img/portada.png);
-  background-repeat: no-repeat;
-  background-size: 100% 23em;
-}
-
-#baner .text{
-  width: 100%;
-  margin: 10px;
-  padding: 10px;
   text-align: center;
+  background-color: rgb(24, 20, 47);
 }
 
-#baner img {
+#baner .text {
+  width: 50%;
+  margin: 3em 4em;
+  color: #fff;
+}
+
+#baner .text p {
+  color: #000;
+}
+
+#baner .miniatura {
+  width: 50%;
+  margin: 23px 100px;
+}
+
+#baner .video {
   width: 300px;
-  height: 300px;
-  margin: 1em 16em;
+  height: 250px;
 }

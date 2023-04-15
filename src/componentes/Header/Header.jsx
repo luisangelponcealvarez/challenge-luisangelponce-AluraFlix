@@ -4,9 +4,11 @@ function Header() {
   return (
     <section id="Header">
       <nav id="menu">
-        <h1>Anime luis angel ponce</h1>
+        <a href="#">
+          <h1>Anime luis angel ponce</h1>
+        </a>
         <button className="btn-NuevoVideo">Nuevo Video</button>
-      </nav> 
+      </nav>
     </section>
   );
 }

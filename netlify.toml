@@ -1,4 +1,4 @@
 [[redirects]]
-  from = "*"
-  to = "*"
+  from = "/"
+  to = "/src/componentes/404/404.jsx"
   status = 200

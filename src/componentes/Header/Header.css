@@ -7,14 +7,17 @@
 #menu {
   width: 100%;
   display: flex;
+  padding: 0em 2em;
+  align-items: center;
+  text-align: center;
   justify-content: space-between;
-  padding: 1em 2em;
 }
 
-#menu h1 {
+#menu .logo {
   color: #fff;
   display: flex;
   align-items: center;
+  margin: 2em;
   justify-content: center;
   text-align: center;
 }

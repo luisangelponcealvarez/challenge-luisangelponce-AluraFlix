@@ -1,6 +1,6 @@
 import "./Cabesera.css";
 
-function Cabesera() {
+function Cabesera(props) {
   return (
     <section id="baner">
       <div className="text">
@@ -13,7 +13,7 @@ function Cabesera() {
         </p>
       </div>
       <div className="miniatura">
-        
+       <video src={props.video} /> 
       </div>
     </section>
   );

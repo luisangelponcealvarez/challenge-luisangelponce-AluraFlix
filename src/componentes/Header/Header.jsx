@@ -8,7 +8,7 @@ function Header() {
         <Link to="/" className="logo">
           Anime luis angel ponce
         </Link>
-        <Link to="/formulario">Nuevo Video</Link>
+        <Link to="/NuevoVideo">Nuevo Video</Link>
       </nav>
     </section>
   );

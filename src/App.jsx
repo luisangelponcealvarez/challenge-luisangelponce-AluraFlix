@@ -1,4 +1,3 @@
-import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import DefauldPages from "./componentes/DefauldPages/DefauldPages";
 import Error404 from "./componentes/404/404";
@@ -10,7 +9,7 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<DefauldPages />} />
-          <Route path="/Formulario" element={<Formulario />} />
+          <Route path="/NuevoVideo" element={<Formulario />} />
           <Route path="*" element={<Error404 />} />
         </Routes>
       </Router>

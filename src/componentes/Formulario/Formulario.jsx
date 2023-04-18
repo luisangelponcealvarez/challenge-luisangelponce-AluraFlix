@@ -8,6 +8,8 @@ function Formulario() {
       <Header />
       <form>
         <CampoTexto/>
+        <CampoTexto/>
+        <CampoTexto/>
       </form>
     </>
   );

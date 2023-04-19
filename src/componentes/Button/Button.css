@@ -1,0 +1,23 @@
+.button {
+  width: 100%;
+}
+
+button {
+  font-weight: 600;
+  font-size: 21px;
+  height: 46px;
+  width: 214px;
+  margin: 1em 1em;
+  border-radius: 9px;
+  border: none;
+  cursor: pointer;
+}
+
+.colorblue {
+  background-color: #0000ff;
+}
+
+.colorwhite {
+  background-color: white;
+  border: 1px solid #000;
+}

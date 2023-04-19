@@ -6,7 +6,7 @@ function DefauldPages() {
   return (
     <section id="DefauldPages">
       <Header />
-      <Cabesera video="video"/>
+      <Cabesera />
     </section>
   );
 }

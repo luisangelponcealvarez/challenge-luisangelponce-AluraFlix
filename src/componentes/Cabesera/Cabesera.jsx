@@ -1,6 +1,6 @@
 import "./Cabesera.css";
 
-function Cabesera(props) {
+function Cabesera() {
   return (
     <section id="baner">
       <div className="text">
@@ -11,9 +11,6 @@ function Cabesera(props) {
           veritatis accusantium at sed cum quidem nam delectus quos atque!
           Maxime, alias?
         </p>
-      </div>
-      <div className="miniatura">
-       <video src={props.video} /> 
       </div>
     </section>
   );

@@ -1,5 +1,6 @@
 import Cabesera from "../Cabesera/Cabesera";
 import Header from "../Header/Header";
+import Videos from "../archivos/Videos";
 import "./DefauldPages.css";
 
 function DefauldPages() {
@@ -7,6 +8,7 @@ function DefauldPages() {
     <section id="DefauldPages">
       <Header />
       <Cabesera />
+      <Videos />
     </section>
   );
 }

@@ -12,7 +12,7 @@ function NuevoVideo() {
       <Header />
       <form className="formulario">
         <h1>Nuevo video</h1>
-        <CampoTexto placeholder="Titulo" />
+        <CampoTexto placeholder="Titulo" required />
         <CampoTexto placeholder="Link del video" required />
         <CampoTexto placeholder="Link imagem del video" required />
         <ListaOpciones />

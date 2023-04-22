@@ -5,7 +5,9 @@ function ListaOpciones() {
   return (
     <div>
       <select>
-       {categorias.map((categoria ,index)=> <option key={index}>{categoria}</option>)}
+        {categorias.map((categoria, index) => (
+          <option key={index}>{categoria}</option>
+        ))}
       </select>
     </div>
   );

@@ -14,7 +14,9 @@ function NuevoVideo() {
         <CampoTexto placeholder="Link del video" required />
         <CampoTexto placeholder="Link imagem del video" required />
         <ListaOpciones />
-        <Button />
+        <Button texto="Guardar" />
+        <Button texto="Limpiar" />
+        <Button texto="Nueva Categoria" sitio="/NuevaCategoria"></Button>
       </form>
     </>
   );

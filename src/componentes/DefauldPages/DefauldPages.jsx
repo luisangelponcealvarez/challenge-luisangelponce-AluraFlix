@@ -1,6 +1,6 @@
 import Header from "../Header/Header";
 import Videos from "../Videos";
-import { Lista } from "../lista";
+import { Lista } from "../Videos/lista";
 import "./DefauldPages.css";
 
 function DefauldPages() {

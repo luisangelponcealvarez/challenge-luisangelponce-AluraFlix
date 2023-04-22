@@ -1,4 +1,5 @@
 import ReactPlayer from "react-player";
+
 function Videos(props) {
   const { title, video } = props.lista;
 

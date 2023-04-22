@@ -1,12 +1,13 @@
 import "./ListaOpciones.css";
+import { categorias } from "./categorias";
 
 function ListaOpciones() {
   return (
     <div>
       <select>
-        <option>Escoja una categoría</option>
-        <option>Anime</option>
-        <option>Ficción</option>
+        {categorias.map((categoria, index) => (
+          <option key={index}>{categoria}</option>
+        ))}
       </select>
     </div>
   );

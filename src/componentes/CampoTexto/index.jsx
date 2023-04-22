@@ -2,6 +2,7 @@ import { useState } from "react";
 import "../NuevoVideo/NuevoVideo.css";
 
 function CampoTexto(props) {
+  
   const [valor, actualizarValor] = useState("");
 
   const manejarCambio = (e) => {

@@ -10,6 +10,9 @@ function Button() {
       <Link>
         <button className="colorwhite">Limpiar</button>
       </Link>
+      <Link to="/NuevaCategoria">
+        <button className="colorblue">Nueva Categoria</button>
+      </Link>
     </div>
   );
 }

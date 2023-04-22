@@ -9,18 +9,19 @@ import { useState } from "react";
 function NuevoVideo() {
   const [Titulo, actualizarTitulo] = useState("");
   const [video, actualizarVideo] = useState("");
-  const [Img, actualizarImg] = useState("");
   const [categoria, actualizarCategoria] = useState("");
+
+  const [videos, actualizarVideos] = useState([]);
 
   function ManejandoEnvio(e) {
     e.preventDefault();
     let datosAEnviar = {
       Titulo,
       video,
-      Img,
       categoria,
     };
     console.log(datosAEnviar);
+    actualizarVideos(videos);
   }
 
   return (
@@ -39,12 +40,6 @@ function NuevoVideo() {
           required
           valor={video}
           actualizarValor={actualizarVideo}
-        />
-        <CampoTexto
-          placeholder="Link imagem del video"
-          required
-          valor={Img}
-          actualizarValor={actualizarImg}
         />
         <ListaOpciones
           valor={categoria}

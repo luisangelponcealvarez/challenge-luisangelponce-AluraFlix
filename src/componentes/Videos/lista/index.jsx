@@ -1,6 +1,6 @@
 export const Lista = [
   {
-    title: "kimetsunollarba",
+    title: "",
     video: "",
   },
 ];

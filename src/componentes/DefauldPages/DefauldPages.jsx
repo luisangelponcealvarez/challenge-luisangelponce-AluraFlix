@@ -8,7 +8,7 @@ function DefauldPages() {
     <section id="DefauldPages">
       <Header />
       {Lista.map((Lista, index) => (
-        <Videos lista={Lista} key={index} />
+        <Videos lista={Lista} actualizarVideos={Videos} key={index} />
       ))}
     </section>
   );

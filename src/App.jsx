@@ -4,17 +4,18 @@ import Error404 from "./componentes/404/404";
 import NuevoVideo from "./componentes/NuevoVideo";
 import NuevaCategoria from "./componentes/NuevaCategoria";
 import { useState } from "react";
+import Header from "./componentes/Header/Header";
 
 function App() {
   const [videos, actualizarvideos] = useState([]);
 
-  const containerVideo = (video) => {
+  const containerVideo = () => {
     actualizarvideos([...videos, actualizarvideos]);
-    console.log(video)
   };
 
   return (
     <div className="App">
+      <Header />
       <Router>
         <Routes>
           <Route path="/" element={<DefauldPages />} />

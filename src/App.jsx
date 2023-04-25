@@ -1,30 +1,30 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Error404 from "./componentes/404/404";
 import Header from "./componentes/Header/Header";
-import Videos from "./componentes/Videos";
 import { useState } from "react";
-import { Lista } from "./componentes/Videos/lista";
 import NuevoVideo from "./componentes/NuevoVideo";
 import NuevaCategoria from "./componentes/NuevaCategoria";
+import { Lista } from "./componentes/Videos/lista/Lista";
+import Videos from "./componentes/Videos";
 
 function App() {
-  const [video, actualizarvideos] = useState([]);
+  const [videos, actualizarvideos] = useState([]);
 
-  const containerVideo = (videos) => {
-    console.log(video);
-    actualizarVideos([...videos, actualizarvideos]);
+  const containerVideo = () => {
+    actualizarVideos([videos, actualizarvideos]);
   };
+
+  {
+    {
+      Lista.map((Lista, index) => <Videos Lista={Lista} key={index} />);
+    }
+  }
 
   return (
     <div className="App">
       <Header />
-      {Lista.map((Lista, index) => (
-        <Videos lista={Lista} key={index} />
-      ))}
-
       <Router>
         <Routes>
-          <Route path="/" />
           <Route
             path="/NuevoVideo"
             element={<NuevoVideo containerVideo={containerVideo} />}

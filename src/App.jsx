@@ -4,14 +4,14 @@ import Header from "./componentes/Header/Header";
 import { useState } from "react";
 import NuevoVideo from "./componentes/NuevoVideo";
 import NuevaCategoria from "./componentes/NuevaCategoria";
-import { Lista } from "./componentes/Videos/lista/Lista";
 import Videos from "./componentes/Videos";
+import { Lista } from "./componentes/Videos/lista/Lista";
 
 function App() {
-  const [videos, actualizarvideos] = useState([]);
+  const [video, actualizarvideos] = useState([]);
 
   const containerVideo = () => {
-    actualizarVideos([videos, actualizarvideos]);
+    actualizarVideos([...video, actualizarvideos]);
   };
 
   {

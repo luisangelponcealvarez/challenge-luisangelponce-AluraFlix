@@ -7,15 +7,15 @@ import "./NuevoVideo.css";
 import { useState } from "react";
 
 function NuevoVideo(props) {
-  const [title, actualizarTitulo] = useState("");
-  const [video, actualizarVideo] = useState("");
+  const [Title, actualizarTitulo] = useState("");
+  const [Video, actualizarVideo] = useState("");
   const [categoria, actualizarCategoria] = useState("");
 
   function ManejandoEnvio(e) {
     e.preventDefault();
     let datosAEnviar = {
-      title,
-      video,
+      Title,
+      Video,
       categoria,
     };
     props.containerVideo(datosAEnviar);
@@ -29,13 +29,13 @@ function NuevoVideo(props) {
         <CampoTexto
           placeholder="Titulo"
           required
-          valor={title}
+          valor={Title}
           actualizarValor={actualizarTitulo}
         />
         <CampoTexto
           placeholder="Link del video"
           required
-          valor={video}
+          valor={Video}
           actualizarValor={actualizarVideo}
         />
         <ListaOpciones

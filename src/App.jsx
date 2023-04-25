@@ -11,7 +11,7 @@ function App() {
   const [video, actualizarvideos] = useState([]);
 
   const containerVideo = () => {
-    actualizarVideos([...video, actualizarvideos]);
+    actualizarvideo([...video, actualizarvideos]);
   };
 
   {

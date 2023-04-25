@@ -18,7 +18,7 @@ function NuevoVideo(props) {
       Video,
       categoria,
     };
-    props.actualizarVideos(datosAEnviar);
+    props.containerVideo(datosAEnviar);
   }
 
   return (

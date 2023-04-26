@@ -2,12 +2,12 @@ import ReactPlayer from "react-player";
 import "./Videos.css";
 
 function Videos(props) {
-  const { Title, Video } = props.lista;
+  const { titulo, videos } = props.Lista;
 
   return (
     <div id="container-videos">
-      <h2 className="titulo">{Title}</h2>
-      <ReactPlayer className="video" url={Video} controls />
+      <h2 className="titulo">{titulo}</h2>
+      <ReactPlayer className="video" url={videos} controls />
     </div>
   );
 }

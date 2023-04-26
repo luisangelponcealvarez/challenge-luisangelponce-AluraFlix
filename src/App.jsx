@@ -8,19 +8,21 @@ import { useState } from "react";
 function App() {
   const [videos, actualizarvideos] = useState([]);
 
-  const containerVideo = (video) => {
+  const containerVideo = () => {
     actualizarvideos([...videos, actualizarvideos]);
-    console.log(video)
   };
 
   return (
     <div className="App">
       <Router>
         <Routes>
-          <Route path="/" element={<DefauldPages />} />
+          <Route
+            path="/"
+            element={<DefauldPages datos={containerVideo} />}
+          />
           <Route
             path="/NuevoVideo"
-            element={<NuevoVideo containerVideo={containerVideo} />}
+            element={<NuevoVideo datos={containerVideo} />}
           />
           <Route path="/NuevaCategoria" element={<NuevaCategoria />} />
           <Route path="*" element={<Error404 />} />

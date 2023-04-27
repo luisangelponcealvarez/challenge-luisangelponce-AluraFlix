@@ -2,7 +2,7 @@ import ReactPlayer from "react-player";
 import "./Videos.css";
 
 function Videos(props) {
-  const { titulo, videos } = props.archivos;
+  const { titulo, videos } = props.videos;
 
   return (
     <div id="container-videos">

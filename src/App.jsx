@@ -6,7 +6,11 @@ import NuevaCategoria from "./componentes/NuevaCategoria";
 import { useState } from "react";
 
 function App() {
-  const [datos, actualizarvideos] = useState([
+  const [lista, actualizarLista] = useState([
+    {
+      titulo: "luis",
+      videos: "https://www.youtube.com/watch?v=8zKFjWRrIME",
+    },
     {
       titulo: "luis",
       videos: "https://www.youtube.com/watch?v=8zKFjWRrIME",
@@ -14,17 +18,14 @@ function App() {
   ]);
 
   const containerVideo = () => {
-    actualizarvideos([...datos, actualizarvideos]);
+    actualizarLista([...lista, listas]);
   };
 
   return (
     <div className="App">
       <Router>
         <Routes>
-          <Route
-            path="/"
-            element={<DefauldPages archivos={containerVideo} />}
-          />
+          <Route path="/" element={<DefauldPages lista={containerVideo} />} />
           <Route
             path="/NuevoVideo"
             element={<NuevoVideo datos={containerVideo} />}

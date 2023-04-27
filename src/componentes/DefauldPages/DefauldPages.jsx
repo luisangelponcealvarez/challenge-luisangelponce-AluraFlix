@@ -1,21 +1,15 @@
 import Header from "../Header/Header";
 import Videos from "../Videos";
+import datos from "../Videos/Lista";
 
 function DefauldPages(props) {
-  const Lista = [
-    {
-      titulo: "",
-      videos: "",
-    },
-  ];
-
-  const { containerVideo } = props.datos;
+  const { containerVideo } = props.archivos;
 
   return (
     <section id="DefauldPages">
       <Header />
-      {Lista.map((Lista, index) => (
-        <Videos Lista={Lista} datos={containerVideo} key={index} />
+      {datos.map((datos, index) => (
+        <Videos datos={containerVideo} key={index} />
       ))}
     </section>
   );

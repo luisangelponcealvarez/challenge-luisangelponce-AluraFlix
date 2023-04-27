@@ -17,15 +17,15 @@ function App() {
     },
   ]);
 
-  const containerVideo = () => {
-    actualizarLista([...lista, listas]);
+  const containerVideo = (datos) => {
+    actualizarLista([...lista, datos]);
   };
 
   return (
     <div className="App">
       <Router>
         <Routes>
-          <Route path="/" element={<DefauldPages lista={containerVideo} />} />
+          <Route path="/" element={<DefauldPages />} />
           <Route
             path="/NuevoVideo"
             element={<NuevoVideo datos={containerVideo} />}

@@ -7,8 +7,8 @@ function DefauldPages(props) {
   return (
     <section id="DefauldPages">
       <Header />
-      {containerVideo.map((index) => (
-        <Videos datos={containerVideo} key={index} />
+      {videos.map((_videos, index) => (
+        <Videos datos={containerVideo} items={lista} key={index} />
       ))}
     </section>
   );

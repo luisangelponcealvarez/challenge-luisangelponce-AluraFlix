@@ -20,12 +20,13 @@ function App() {
 
   return (
     <div className="App">
-      <Header />
       {lista.map((containerVideo, index) => (
         <Videos datos={containerVideo} key={index} />
       ))}
       <Router>
+        <Header />
         <Routes>
+          <Route path="/" element={NuevoVideo} />
           <Route
             path="/NuevoVideo"
             element={<NuevoVideo datos={containerVideo} />}

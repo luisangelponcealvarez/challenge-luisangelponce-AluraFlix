@@ -1,31 +1,31 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import DefauldPages from "./componentes/DefauldPages/DefauldPages";
 import Error404 from "./componentes/404/404";
 import NuevoVideo from "./componentes/NuevoVideo";
 import NuevaCategoria from "./componentes/NuevaCategoria";
 import { useState } from "react";
+import Header from "./componentes/Header/Header";
+import Videos from "./componentes/Videos";
 
 function App() {
   const [lista, actualizarLista] = useState([
     {
-      titulo: "luis",
-      videos: "https://www.youtube.com/watch?v=8zKFjWRrIME",
-    },
-    {
-      titulo: "luis",
-      videos: "https://www.youtube.com/watch?v=8zKFjWRrIME",
+      titulo: "luis angel ponce",
+      video: "https://www.youtube.com/watch?v=Y-OhzQpsRwI&t=632s",
     },
   ]);
 
   const containerVideo = (datos) => {
-    actualizarLista([...lista, datos]);
+    actualizarLista([lista, datos]);
   };
 
   return (
     <div className="App">
+      <Header />
+      {lista.map((containerVideo, index) => (
+        <Videos datos={containerVideo} key={index} />
+      ))}
       <Router>
         <Routes>
-          <Route path="/" element={<DefauldPages />} />
           <Route
             path="/NuevoVideo"
             element={<NuevoVideo datos={containerVideo} />}

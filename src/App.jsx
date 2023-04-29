@@ -1,10 +1,9 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Error404 from "./componentes/404/404";
+import Home from "./componentes/Home";
 import NuevoVideo from "./componentes/NuevoVideo";
 import NuevaCategoria from "./componentes/NuevaCategoria";
+import Error404 from "./componentes/404/404";
 import { useState } from "react";
-import Header from "./componentes/Header/Header";
-import Videos from "./componentes/Videos";
 
 function App() {
   const [lista, actualizarLista] = useState([
@@ -17,16 +16,12 @@ function App() {
   const containerVideo = (datos) => {
     actualizarLista([lista, datos]);
   };
-
+ 
   return (
     <div className="App">
-      {lista.map((containerVideo, index) => (
-        <Videos datos={containerVideo} key={index} />
-      ))}
       <Router>
-        <Header />
         <Routes>
-          <Route path="/" element={NuevoVideo} />
+          <Route path="/" element={<Home file={lista} />} />
           <Route
             path="/NuevoVideo"
             element={<NuevoVideo datos={containerVideo} />}

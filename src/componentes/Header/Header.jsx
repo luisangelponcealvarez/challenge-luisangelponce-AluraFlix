@@ -1,13 +1,14 @@
+import { Link } from "react-router-dom";
 import "./Header.css";
 
 function Header() {
   return (
     <section id="Header">
       <nav id="menu">
-        <a href="/" className="logo">
+        <Link to="/" className="logo">
           Anime luis angel ponce
-        </a>
-        <a href="/NuevoVideo">Nuevo Video</a>
+        </Link>
+        <Link to="/NuevoVideo">Nuevo Video</Link>
       </nav>
     </section>
   );

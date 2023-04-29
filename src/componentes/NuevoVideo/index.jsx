@@ -8,14 +8,14 @@ import { useState } from "react";
 
 function NuevoVideo(props) {
   const [titulo, actualizarTitulo] = useState("");
-  const [videos, actualizarVideo] = useState("");
+  const [video, actualizarVideo] = useState("");
   const [categoria, actualizarCategoria] = useState("");
 
   function ManejandoEnvio(e) {
     e.preventDefault();
     let datosAEnviar = {
       titulo,
-      videos,
+      video,
       categoria,
     };
     props.datos(datosAEnviar);
@@ -35,7 +35,7 @@ function NuevoVideo(props) {
         <CampoTexto
           placeholder="Link del video"
           required
-          valor={videos}
+          valor={video}
           actualizarValor={actualizarVideo}
         />
         <ListaOpciones

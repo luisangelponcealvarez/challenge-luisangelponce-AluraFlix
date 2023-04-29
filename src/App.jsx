@@ -14,7 +14,7 @@ function App() {
   ]);
 
   const containerVideo = (datos) => {
-    actualizarLista([lista, datos]);
+    actualizarLista([...lista, datos]);
   };
  
   return (

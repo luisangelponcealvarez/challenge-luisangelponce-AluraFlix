@@ -1,22 +1,17 @@
-import { useState } from "react";
 import "../NuevoVideo/NuevoVideo.css";
 
 function CampoTexto(props) {
-  
-  const [valor, actualizarValor] = useState("");
-
-  const manejarCambio = (e) => {
-    actualizarValor(e.target.value);
-  };
-
+  function manejarCambio(e) {
+    props.actualizarValor(e.target.value);
+  }
   return (
     <>
       <input
         placeholder={props.placeholder}
         className="InputCampoTexto"
-        required={props.required}
-        value={valor}
+        value={props.valor}
         onChange={manejarCambio}
+        required={props.required}
       />
     </>
   );

@@ -1,19 +1,10 @@
-import { Link } from "react-router-dom";
 import "./Button.css";
 
-function Button() {
+function Button(props) {
   return (
-    <div className="button">
-      <Link>
-        <button className="colorblue">Guardar</button>
-      </Link>
-      <Link>
-        <button className="colorwhite">Limpiar</button>
-      </Link>
-      <Link to="/NuevaCategoria">
-        <button className="colorblue">Nueva Categoria</button>
-      </Link>
-    </div>
+    <>
+      <button className="colorblue">{props.texto}</button>
+    </>
   );
 }
 

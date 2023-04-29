@@ -12,7 +12,8 @@ function NuevaCategoria() {
         <h1>Nueva Categoria</h1>
         <CampoTexto placeholder="Titulo" />
         <Input />
-        <Button />
+        <Button texto="Guardar" />
+        <Button texto="Limpiar" />
       </form>
     </>
   );

@@ -16,19 +16,18 @@ function App() {
   const containerVideo = (datos) => {
     actualizarLista([...lista, datos]);
   };
- 
+
   return (
     <div className="App">
       <Router>
         <Routes>
-
           <Route path="/" element={<Home file={lista} />} />
           <Route
             path="/NuevoVideo"
             element={<NuevoVideo datos={containerVideo} />}
           />
           <Route path="/NuevaCategoria" element={<NuevaCategoria />} />
-          <Route path="*" element={<Error404 />} />
+          <Route path="/404" element={<Error404 />} />
         </Routes>
       </Router>
     </div>

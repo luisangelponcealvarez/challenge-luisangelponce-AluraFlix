@@ -17,6 +17,17 @@ function App() {
     actualizarLista([...lista, datos]);
   };
 
+  const [listaCategorias, actualizarCategorias] = useState([
+    {
+      categoria: "Anime",
+      color: "#000",
+    },
+  ]);
+
+  const categorias = (categorias) => {
+    actualizarCategorias([...listaCategorias, categorias]);
+  };
+
   return (
     <>
       <Router>
@@ -24,7 +35,13 @@ function App() {
           <Route path="/" element={<Home file={lista} />} />
           <Route
             path="/NuevoVideo"
-            element={<NuevoVideo datos={containerVideo} />}
+            element={
+              <NuevoVideo
+                datos={containerVideo}
+                listaCategorias={listaCategorias}
+                categorias={categorias}
+              />
+            }
           />
           <Route path="/NuevaCategoria" element={<NuevaCategoria />} />
           <Route path="/*" element={<Error404 />} />

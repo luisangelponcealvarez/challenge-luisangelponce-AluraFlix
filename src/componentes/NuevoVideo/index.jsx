@@ -39,10 +39,10 @@ function NuevoVideo(props) {
           actualizarValor={actualizarVideo}
         />
         <ListaOpciones
-          valor={categoria}
+          valor={actualizarCategoria}
           actualizarCategoria={actualizarCategoria}
         />
-        <Button texto="Guardar" onSubmit={ManejandoEnvio}/>
+        <Button texto="Guardar" onSubmit={ManejandoEnvio} />
         <Button texto="Limpiar" />
         <Link to="/NuevaCategoria">
           <Button texto="Nueva Categoria" />

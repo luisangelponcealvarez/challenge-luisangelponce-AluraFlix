@@ -28,6 +28,7 @@ function App() {
           />
           <Route path="/NuevaCategoria" element={<NuevaCategoria />} />
           <Route path="/404" element={<Error404 />} />
+          <Route component={<Error404 />} />
         </Routes>
       </Router>
     </div>

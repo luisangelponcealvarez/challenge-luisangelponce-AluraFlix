@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./componentes/Home";
 import NuevoVideo from "./componentes/NuevoVideo";
 import NuevaCategoria from "./componentes/NuevaCategoria";
@@ -18,7 +18,7 @@ function App() {
   };
 
   return (
-    <div className="App">
+    <>
       <Router>
         <Routes>
           <Route path="/" element={<Home file={lista} />} />
@@ -27,11 +27,10 @@ function App() {
             element={<NuevoVideo datos={containerVideo} />}
           />
           <Route path="/NuevaCategoria" element={<NuevaCategoria />} />
-          <Route path="/404" element={<Error404 />} />
-          <Route component={<Error404 />} />
+          <Route path="/*" element={<Error404 />} />
         </Routes>
       </Router>
-    </div>
+    </>
   );
 }
 

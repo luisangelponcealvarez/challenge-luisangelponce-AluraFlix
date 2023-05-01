@@ -3,8 +3,7 @@ import "./Videos.css";
 
 function Videos(props) {
   const { titulo, video } = props.datos;
-  console.log(video)
-  
+
   return (
     <div id="container-videos">
       <h2 className="titulo">{titulo}</h2>

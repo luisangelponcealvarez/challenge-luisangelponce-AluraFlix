@@ -1,7 +1,10 @@
+.Error404 {
+  background-color: #fff;
+}
+
 .dog-image {
   width: 100%;
   height: 34em;
-  margin-top: 1em;
 }
 
 .notfound-text {

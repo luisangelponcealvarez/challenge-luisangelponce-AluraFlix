@@ -1,15 +1,15 @@
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./componentes/Home";
-import NuevoVideo from "./componentes/NuevoVideo";
-import NuevaCategoria from "./componentes/NuevaCategoria";
-import Error404 from "./componentes/404/404";
 import { useState } from "react";
+import Home from "./components/Home";
+import NuevoVideo from "./components/NuevoVideo";
+import NuevaCategoria from "./components/NuevaCategoria";
+import Error404 from "./components/404";
 
 function App() {
   const [lista, actualizarLista] = useState([
     {
       titulo: "luis angel ponce",
-      video: "https://www.youtube.com/watch?v=Y-OhzQpsRwI&t=632s",
+      video: "si jala el video",
     },
   ]);
 

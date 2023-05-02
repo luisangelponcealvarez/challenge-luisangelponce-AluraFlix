@@ -9,14 +9,14 @@ function App() {
   const [lista, actualizarLista] = useState([
     {
       titulo: "luis angel ponce",
-      video: "https://www.youtube.com/watch?v=Y-OhzQpsRwI&t=632s",
+      video: "",
     },
   ]);
 
   const containerVideo = (datos) => {
     actualizarLista([...lista, datos]);
   };
- 
+
   return (
     <div className="App">
       <Router>

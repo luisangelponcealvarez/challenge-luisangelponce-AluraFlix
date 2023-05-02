@@ -2,9 +2,7 @@ import Header from "../Header/Header";
 import Videos from "../Videos";
 
 function Home(props) {
-  const file  = props.file;
-  
-
+  const file = props.file;
   return (
     <>
       <Header />

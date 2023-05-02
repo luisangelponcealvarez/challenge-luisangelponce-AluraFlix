@@ -11,6 +11,8 @@ function NuevoVideo(props) {
   const [video, actualizarVideo] = useState("");
   const [categoria, actualizarCategoria] = useState("");
 
+  const listaCategorias = props.listaCategorias;
+
   function ManejandoEnvio(e) {
     e.preventDefault();
     let datosAEnviar = {
@@ -39,10 +41,11 @@ function NuevoVideo(props) {
           actualizarValor={actualizarVideo}
         />
         <ListaOpciones
-          valor={categoria}
+          valor={actualizarCategoria}
           actualizarCategoria={actualizarCategoria}
+          listaCategorias={listaCategorias}
         />
-        <Button texto="Guardar" onSubmit={ManejandoEnvio}/>
+        <Button texto="Guardar" onSubmit={ManejandoEnvio} />
         <Button texto="Limpiar" />
         <Link to="/NuevaCategoria">
           <Button texto="Nueva Categoria" />

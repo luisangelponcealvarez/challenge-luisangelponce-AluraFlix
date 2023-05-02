@@ -1,10 +1,13 @@
 import "./ListaOpciones.css";
-import { categorias } from "./categorias";
 
 function ListaOpciones(props) {
   function manejarCambio(e) {
     props.actualizarCategoria(e.target.value);
   }
+
+  const listCategoris = props.listaCategorias;
+
+  console.log(listCategoris);
 
   return (
     <div>
@@ -12,8 +15,8 @@ function ListaOpciones(props) {
         <option value="" disabled defaultValue="" hidden>
           Seleccionar categoria
         </option>
-        {categorias.map((categoria, index) => (
-          <option key={index}>{categoria}</option>
+        {listCategoris.map((categoria, index) => (
+          <option key={index}>{listCategoris}</option>
         ))}
       </select>
     </div>

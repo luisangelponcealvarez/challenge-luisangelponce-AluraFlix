@@ -1,3 +1,4 @@
+import Footer from "../Footer";
 import Header from "../Header/Header";
 import Videos from "../Videos";
 
@@ -9,6 +10,7 @@ function Home(props) {
       {file.map((containerVideo, index) => (
         <Videos datos={containerVideo} key={index} />
       ))}
+      <Footer />
     </>
   );
 }

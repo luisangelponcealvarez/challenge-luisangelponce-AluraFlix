@@ -3,7 +3,6 @@ import { useState } from "react";
 import Home from "./components/Home";
 import NuevoVideo from "./components/NuevoVideo";
 import Error404 from "./components/404";
-import Footer from "./components/Footer";
 
 function App() {
   const [lista, actualizarLista] = useState([
@@ -37,7 +36,6 @@ function App() {
           <Route path="/*" element={<Error404 />} />
         </Routes>
       </Router>
-      <Footer />
     </>
   );
 }

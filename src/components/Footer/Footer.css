@@ -1,0 +1,13 @@
+/* footer */
+
+#contac {
+  width: 96%;
+  text-align: center;
+  margin: 10px;
+}
+
+#contac .icon {
+  color: #000;
+  font-size: 30px;
+  margin: 10px;
+}

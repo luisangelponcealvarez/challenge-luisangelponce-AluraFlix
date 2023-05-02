@@ -1,16 +1,14 @@
-#container-videos{
-  justify-content: center;
-  text-align: center;
+#container-videos {
   margin: 10px;
   padding: 10px;
 }
 
-.titulo{
+.titulo {
   display: flex;
   margin: 10px;
 }
 
-#container-videos .video{
+#container-videos .video {
   width: 50px;
   height: 200px;
 }
